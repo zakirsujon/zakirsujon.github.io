@@ -434,3 +434,12 @@
 h1 {
     text-indent: -3px;
 }
+#navbarCollapse h1 {
+    text-indent: -280px;
+    color: transparent;
+    background: #d7d6a0 url('../img/zakirsujon-avater.webp') no-repeat 1px 0 / auto 100%;
+    border-radius: 5px;
+}
+#home {
+    background-color: #e4e9f1;
+}
