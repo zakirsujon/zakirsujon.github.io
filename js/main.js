@@ -121,6 +121,23 @@
         loop: true,
     });
 
+
+    // Mail-To
+    $('#send_email').click(function(e){
+        e.preventDefault();
+
+        var name = $('#name').val();
+        var email = $('#name').val();
+        var subject = $('#subject').val();
+        var message = $('#message').val();
+
+        if( name && email && subject && message ){
+            window.location.href = 'mailto:' + email + '?subject=' + subject + '&body=' + message;
+        } else {
+            alert('All fields are required!');
+        }
+    });
+
     
 })(jQuery);
 
